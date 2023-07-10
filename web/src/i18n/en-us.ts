@@ -1,0 +1,65 @@
+const en = {
+    ERROR: {
+        500: 'Failed, please try later',
+        1001: 'MQTT broker connection parameter error, please check and re-enter',
+        1701: 'Failed to get iHost access token, please try again.'
+    },
+    DEVICE_LIST_TITLE: 'Device list',
+    AUTO_SYNC_TIP: 'Auto-sync new-added devices',
+    DEVICE_LIST_UNSUPPORTED_TIP: 'Not supported yet',
+    DEVICE_OFFLINE: 'offline',
+    SYNC: 'Sync',
+    CANCELING_SYNC: 'Unsync',
+    SYNC_SUCCESS: 'Success',
+    CANCEL_SYNC_SUCCESS: 'Success',
+    SYNC_FAIL: 'Sync device failed',
+    NO_DATA: 'No Data',
+    SYNCING_ALL_DEVICE_TIP: 'Syncing all devices, please wait',
+    DEVICE_LIST_DISCONNECT_TIP: 'Unable to connect to the MQTT broker. Please click Settings to reconfigure the MQTT broker.',
+    SETTINGS_HEADER_TITLE: 'Settings',
+    SETTINGS_BODY_TITLE: 'MQTT broker configurations',
+    SETTINGS_DESCRIPTION:
+        "To control Tasmota devices, an MQTT broker is required for MQTT command forwarding. Please complete the following configurations to connect to your MQTT broker. If you don't have an MQTT broker yet, you can install the Mosquitto Add-on in iHost to serve as your MQTT broker.",
+    SETTINGS_SAVE_SUCCESS: 'Success',
+    SETTINGS_SAVE_VALIDATE_LACK: 'Please enter the host and port',
+    SETTINGS_SAVE_VALIDATE_PORT_NUMBER: 'The port value should be numbers',
+    SETTINGS_FORM: {
+        HOST: 'Domain name/IP',
+        PORT: 'Port',
+        USERNAME: 'Username',
+        PASSWORD: 'Password',
+    },
+    SETTINGS_PLACEHOLDER: {
+        HOST: 'The domain name/IP address of MQTT broker. It is recommended to use a domain name.',
+        PORT: 'Port of your MQTT Port',
+        USERNAME: 'The username for the MQTT broker (If you have set one)',
+        PASSWORD: 'MQTT broker password (If you have set one)',
+    },
+    SETTINGS_TIP_MODAL: {
+        MAIN_TITLE: 'Tasmota Add-on allows you to sync your Tasmota devices to iHost for control and management.',
+        PREPARE_WORK: {
+            TITLE: 'You need following preparations before using:',
+            STEP1: 'Your devices have flashed the Tasmota firmware.',
+            STEP2: 'Please make sure “MQTT Enable” is checked in Configuration->Configure Other.',
+            STEP3: 'Have a functional MQTT broker ready.',
+            STEP4: 'Please ensure the value in setOption19 is 0.',
+            DOC_LINK: 'Click to view the reference file>',
+        },
+        SUPPORTED_DEVICE: {
+            TITLE: 'Currently supported device types:',
+            CONTENT: 'Switch、Plug',
+        },
+        FOOTER_TIP: 'Please click "Start" below to configure MQTT broker if these preparations are completed.',
+        CONFIRM: 'Start',
+    },
+    GET_ACCESS_TOKEN_TIP_TITLE: 'Please follow steps below to get iHost access token: ',
+    GET_ACCESS_TOKEN_TIP1: ' Enter this Add-on page in iHost dashboard and confirm "Get iHost access token"',
+    GET_ACCESS_TOKEN_TIP2: ' Back to current page and click "Complete"',
+    FINISH: 'Complete',
+    CANCEL: 'Cancel',
+    SAVE: 'Save',
+    GET_TOKEN_SUCCESS: 'The token has been obtained, click the button again to synchronize the device',
+    DEVICE_SYNC_SUCCESS: '{number} devices synced successfully',
+};
+
+export default en;
